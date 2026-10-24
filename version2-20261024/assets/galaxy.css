@@ -173,3 +173,15 @@ h1,h2,h3,h4,strong{font-family:var(--font)}
 @media(max-width:700px){.dash-heading h1{font-size:40px}.console-site .page-heading h1{font-size:38px}.console-site .home h1{font-size:48px}.console-site .contact h2{font-size:48px}}
 @media(max-width:520px){.console-rail{box-shadow:inset 0 -1px 0 #ffffff06;background:linear-gradient(180deg,#142131f5,#0d1928fa)}.console-rail .rail-nav{gap:2px}.rail-nav a{padding:7px 2px;gap:4px;min-height:49px;border-radius:7px}.rail-nav a>.rail-text{display:none}.rail-nav a>span:first-child{width:20px;height:20px}.rail-icon{width:18px;height:18px}.rail-short{font-family:var(--font);font-weight:500;font-size:10px;letter-spacing:0}.rail-nav a[aria-current=page]:before{top:auto;left:25%;right:25%;bottom:0;width:auto;height:2px;box-shadow:none}.console-site .home h1{font-size:46px}.console-site .section-top h2,.console-site .about h2{font-size:37px}}
 @media(prefers-reduced-motion:reduce){.rail-nav a{transition:none}}
+
+/* Give the driving preview the available card space; keep task links at its foot. */
+.dash-motion{display:flex;flex-direction:column}
+.dash-motion .dash-car-art{flex:1;min-height:190px;margin:16px -6px 18px;display:grid;align-items:center}
+.dash-motion .dash-car-art canvas{height:auto;aspect-ratio:600/240;width:100%}
+.dash-motion .dash-task-list{margin-top:auto;flex-shrink:0}
+@media(max-width:760px){.dash-motion .dash-car-art{flex:none;min-height:0;margin:12px -5px 15px}.dash-motion .dash-task-list{margin-top:0}}
+
+.dash-motion .dash-task-list a{padding:13px 11px;gap:9px;align-items:center}
+.dash-task-list .dash-task-copy{margin-left:0;min-width:0;color:#d0dce5;line-height:1.4}
+.dash-task-copy small{display:block;font-size:11px;line-height:1.5;font-weight:400;color:#8fa6b7;margin-top:5px}
+@media(max-width:520px){.dash-motion .dash-task-list a{padding:11px 9px;gap:7px}.dash-task-copy small{font-size:10px}}
