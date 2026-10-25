@@ -185,3 +185,17 @@ h1,h2,h3,h4,strong{font-family:var(--font)}
 .dash-task-list .dash-task-copy{margin-left:0;min-width:0;color:#d0dce5;line-height:1.4}
 .dash-task-copy small{display:block;font-size:11px;line-height:1.5;font-weight:400;color:#8fa6b7;margin-top:5px}
 @media(max-width:520px){.dash-motion .dash-task-list a{padding:11px 9px;gap:7px}.dash-task-copy small{font-size:10px}}
+
+/* Natural photo framing with a separate caption, matched to the satin panels. */
+.welcome-site .portrait{width:100%;max-width:440px;padding:0;justify-self:end;margin:0}
+.welcome-site .portrait-window{padding:0;overflow:hidden;border-radius:18px;border:1px solid #b1c5d139;background:linear-gradient(130deg,#172536,#0d1726);box-shadow:inset 0 1px 0 #ffffff12,0 22px 60px #02061160}
+.welcome-site .portrait img{width:100%;height:auto;aspect-ratio:1.08;object-fit:cover;object-position:43% 25%;border-radius:0;filter:brightness(.92) saturate(.86)}
+.welcome-site .portrait-window:after{display:none}
+.welcome-site .portrait-caption{position:relative;left:auto;bottom:auto;padding:20px 24px 22px;gap:4px;border-top:1px solid #d4e2df20;background:linear-gradient(125deg,#253c4038,transparent)}
+.welcome-site .portrait-caption span{font-size:10px;letter-spacing:.09em;color:#9caebc}
+.welcome-site .portrait-caption strong{font-family:var(--font-display);font-size:32px;font-weight:400;line-height:1.2;letter-spacing:-.025em;margin:2px 0 5px;color:#e3ece8}
+.welcome-site .portrait-caption span:last-child{font-size:10px;letter-spacing:.07em;color:#aac4bd}
+.welcome-site .portrait figcaption{padding:16px 3px;font-size:10px;letter-spacing:.045em;color:#93a9bb}
+.welcome-site .portrait .coordinate{display:none}
+@media(max-width:1000px) and (min-width:701px){.welcome-site .portrait-caption{padding:18px}.welcome-site .portrait-caption strong{font-size:27px}}
+@media(max-width:700px){.welcome-site .portrait{justify-self:center;width:100%;max-width:400px;margin:0 auto 8px}.welcome-site .portrait img{aspect-ratio:1.08;object-position:43% 25%}.welcome-site .portrait-caption{padding:18px 20px 20px}.welcome-site .portrait-caption strong{font-size:30px}.welcome-site .portrait figcaption{font-size:9px}}
